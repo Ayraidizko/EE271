@@ -1,0 +1,32 @@
+
+Dataflow allows for continuous assignment
+
+assign out = sel ? a:b; // signals are fixed
+//0 = a 1 = b
+
+a + b //add
+a | b // or
+assign out = (a ^ b) | c // assigned out cannot be overwritten 
+begin
+	g = a + b;
+	h = g - c;
+
+/*
+Two modes, 
+
+Behavioral Mode// Loops; Always Blocks; Registers;  Fastest way to program in verilog
+Dataflow Mode // Assign Syntax; 
+*/
+
+ikarus verilog ( iverilog)
+
+mkdir /make directory
+touch mux2to1.v 
+gedit mux2to1.v
+
+iverilog testmux.v mux2to1.v -o simout //compiles circuit
+vvp simout //simulates circuit
+
+gtkwave & // generates waveform
+
+
